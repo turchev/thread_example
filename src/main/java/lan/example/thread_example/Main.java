@@ -2,8 +2,8 @@ package lan.example.thread_example;
 
 public class Main {
 
-    // Инициализация 
-    static HelperSingletonBillPugh INSTANCE_TEST_THREAD = HelperSingletonBillPugh.getInstance();
+    
+    static HelperSingletonBillPugh INSTANCE_TEST_THREAD = HelperSingletonBillPugh.getInstance();    
     static ThreadExample[] myThreads = new ThreadExample[10];
     static final int COUNT = 10;
 
