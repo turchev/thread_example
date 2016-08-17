@@ -12,26 +12,8 @@ public class HelperSingletonBillPugh {
     public static HelperSingletonBillPugh getInstance() {
         return SingletonHandler.INSTANCE;
     }
-
-    private long counter = 0L;
-    private long curentThreadId = 0L;
-    private long minThreadId = 0L;
-
-    public long getMinThreadId() {
-        return this.minThreadId;
-    }
-
-    public void setMinThreadId(long minThreadId) {
-        this.minThreadId = minThreadId;
-    }
-
-    public long getCounter() {
-        return this.counter;
-    }
-
-    public void setCounter(long counter) {
-        this.counter = counter;
-    }
+    
+    private long curentThreadId = 0L;   // Поток, который должен выполнить вывод сообщения
 
     public long getCurentThreadId() {
         return this.curentThreadId;
