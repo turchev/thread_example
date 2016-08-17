@@ -18,14 +18,16 @@ public final class ThreadExample extends Thread {
             }
 
             if (INSTANCE_TEST_THREAD.getCurentThreadId() == this.getId()) {
-
-                INSTANCE_TEST_THREAD.incremenCurentThreadId();
+                
+                // Раскомментируй следующую строку
+                //INSTANCE_TEST_THREAD.incremenCurentThreadId();
 
                 System.out.println("Print " + this.getName()
                         + " ### ID:" + this.getId()
                         + " ### getCurentThreadId: " + INSTANCE_TEST_THREAD.getCurentThreadId());
 
-                //INSTANCE_TEST_THREAD.incremenCurentThreadId();          
+                // Закоментируй следующую строку
+                INSTANCE_TEST_THREAD.incremenCurentThreadId();          
 
                 break;
             }
