@@ -4,16 +4,16 @@ public class HelperSingletonBillPugh {
 
     private HelperSingletonBillPugh() {
     }
-
+    
     private static class SingletonHandler {
         private static final HelperSingletonBillPugh INSTANCE = new HelperSingletonBillPugh();
     }
-
+    
     public static HelperSingletonBillPugh getInstance() {
         return SingletonHandler.INSTANCE;
     }
     
-    private long curentThreadId = 0L;   // Поток, который должен выполнить вывод сообщения
+    private long curentThreadId = 0L;   // Id потока, который должен выполнить вывод сообщения
 
     public long getCurentThreadId() {
         return this.curentThreadId;
